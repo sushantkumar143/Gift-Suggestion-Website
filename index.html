@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Suggestion Website</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="shortcut icon" href="6021967.png">
+    <link rel="stylesheet" href="trail_nav.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="dark_menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Grey+Qo&display=swap" rel="stylesheet">
+    <style>
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h5 {
+            font-size: 1.8rem;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+        }
+
+        .slidex {
+            display: grid;
+            place-items: center;
+            background: linear-gradient(to right, rgb(23, 9, 52), #2f0d0a);
+            padding-top: 100px;
+            padding-bottom: 44px;
+        }
+
+        .imagesliderx {
+            width: 55%;
+            height: 400px;
+            background-image: url("aniv1.jpeg");
+            background-size: 100% 100%;
+            animation: imgslide 20s infinite linear;
+            box-shadow: 5px 6px 4px rgb(0, 0, 0);
+
+        }
+
+        @keyframes imgslide {
+            0% {
+                background-image: url("wall1.jpg");
+            }
+
+            25% {
+                background-image: url("wall2.jpeg");
+            }
+
+            50% {
+                background-image: url("wall3.jpeg");
+            }
+
+            75% {
+                background-image: url("wall4.jpeg");
+            }
+
+            100% {
+                background-image: url("wall5.jpg");
+            }
+        }
+
+        @media(max-width: 485px) {
+            .imagesliderx {
+                width: 35%;
+                height: 120px;
+                background-image: url("aniv1.jpeg");
+                background-size: 100% 100%;
+                animation: imgslide 20s infinite linear;
+                box-shadow: 5px 6px 4px rgb(0, 0, 0);
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+
+
+        #reviews-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .review {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #reviews-list {
+            background-color: rgb(48, 75, 80);
+        }
+
+        #darkmode{
+            /* animation: scaleAndRotate 4s infinite alternate; */
+            border-radius: 50%;
+            padding: 5px;
+        }
+        @keyframes scaleAndRotate {
+            0% {
+                transform: scale(1) rotate(-10deg);
+            }
+            100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="kk">
+            <img class="icon" src="6021967.png" alt="gift_icon">
+            <p class="logo" style="font-family: 'Grey Qo', cursive; color: rgb(188, 220, 247);">Explore Unique Gifts</p>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">MENU</label>
+        <input type="text" name="hii" id="oh" placeholder="Search">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href=""><p><u>Categories +</u></p></a>
+                    <ul>
+                        <li><a href="">Gifts For...</a>
+                            <ul>
+                                <li><a href="">Babies</a></li>
+                                <li><a href="">Friends</a>
+                                    <ul>
+                                        <li><a href="friend_male.html">Male</a></li>
+                                        <li><a href="friend_female.html">Female</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Parents</a>
+                                    <ul>
+                                        <li><a href="mother_gift.html">Mother</a></li>
+                                        <li><a href="father_gift.html">Father</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Students</a>
+                                    <ul>
+                                        <li><a href="stu_boy.html">Boy</a></li>
+                                        <li><a href="stu_girl.html">Girl</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="girlffriend_gift_e.html">Girlfriends</a></li>
+                                <li><a href="boyfriend_gift_e.html">Boyfriends</a></li>
+                                <li><a href="couple_gift.html">Couples</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Trending Gifts</a>
+                            <ul>
+                                <li><a href="key_chain.html">Key_Chain</a></li>
+                                <li><a href="toys.html">Toys</a></li>
+                                <li><a href="jwelleries.html">Jwelleries</a></li>
+                                <li><a href="shoes.html">Shoes</a></li>
+                                <li><a href="">Watch</a></li>
+                                <li><a href="electronics.html">Electronics</a></li>
+                                <li><a href="teady">Teady Bear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Occational Gifts</a>
+                            <ul>
+                                <li><a href="birthday.html">Birthday</a></li>
+                                <li><a href="wedding.html">Aniversery</a></li>
+                                <li><a href="wedding.html">Weddings</a></li>
+                                <li><a href="new_year.html">New Year</a></li>
+                                <li><a href="girlffriend_gift_e.html">Valatine's Day</a></li>
+                                <li><a href="">Teacher's Day</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Trending Gifts +</a>
+                    <ul>
+                        <li><a href="">Offers</a></li>
+                        <li><a href="">Best Sellers</a>
+                            <ul>
+                                <li><a
+                                        href="https://www.flipkart.com/search?q=offers%20of%20gift&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">Flipcart</a>
+                                </li>
+                                <li><a
+                                        href="https://www.amazon.in/s?k=gifts&crid=2GG6OCQM9TANM&sprefix=gifts+%2Caps%2C276&ref=nb_sb_noss_2">Amajon</a>
+                                </li>
+                                <li><a
+                                        href="https://www.meesho.com/search?q=trending%20gifts&searchType=manual&searchIdentifier=text_search">Meesho</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="login_kush.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="slidex">
+                <div class="imagesliderx"></div>
+            </div>
+        </section>
+
+        <section>
+            <div id="hiih">
+                <p id="ex" style="font-family: 'Alfa Slab One', serif, 'Grey Qo', cursive;">Explore Best & Unique
+                    Personalised Gifts Here !!!</p>
+            </div>
+        </section>
+
+        <button id="darkmode" onclick="myfunction()"><p style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 900; font-size: 0.8rem;">Dark Mode</p></button>
+
+        <div class="contain">
+            <div class="left-text">
+                <h2 class="heading">Gift Store</h2>
+                <p class="subheading">
+                     dolor sit amet consectetur adipisicing elit. Dicta odit cupiditate mollitia aperiam ea
+                    veritatis tempora deserunt beatae tempore blanditiis et, assumenda, totam iusto molestiae quo provident
+                    debitis cum. Animi.
+                </p>
+            </div>
+    
+            <div class="gallery">
+                <div class="box row-2"
+                    style="background-image: url(https://media.istockphoto.com/id/1354062383/photo/hands-in-cozy-sweater-opening-christmas-gift-with-red-bow-on-background-of-christmas-tree.jpg?s=2048x2048&w=is&k=20&c=u6XNlqV3ZIJW7gdOvabtIvNsSVxIfmvgCjJft2KEqec=);">
+                </div>
+                <div class="box col-2" style="background-image: url(https://media.istockphoto.com/id/1354062383/photo/hands-in-cozy-sweater-opening-christmas-gift-with-red-bow-on-background-of-christmas-tree.jpg?s=612x612&w=is&k=20&c=c_u3GEZD6nQnlNa-08hHRitKMgfJYBKMjASF_zUy-HE=);"></div>
+                <div class="box row-2 col-2" style="background-image: url(https://media.istockphoto.com/id/1445140640/photo/a-box-with-a-red-ribbon-in-his-hands-on-a-blurred-background-with-garlands.jpg?s=612x612&w=0&k=20&c=W9hmR8v7PNYDgS4KS7QVDtEpw2cb3hjbEDQEzRtzMYQ=);"><object class="pdf" type="video/mp4" data="Gift_add.mp4" width="450px" height="250px" autoplay loop></object></div>
+                <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScdP1RzLT3SuWSJq0_uPnm1yRr_qx2d3KPxQ&usqp=CAU);"></div>
+                <div class="box" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKRWLoi6_yrvyiWsz7dtkaOq9oZEbKsL8vQ&usqp=CAU);"></div>
+                <div class="box col-2" style="background-image: url(abc.jpeg);"></div>
+            </div>
+        </div>
+
+        <script>
+            function myfunction() {
+                var element = document.body;
+                element.classList.toggle("light-mode")
+            }
+        </script>
+
+        <h2>Choose Antique & Personalised Gifts For</h2>
+        <section class="sec2">
+            <div class="a">
+                <p>Babies</p>
+                <a href="baby_age.html"><button>Boy</button></a>
+                <a href="baby_girl_age.html"><button>Girl</button></a>
+            </div>
+            <div class="b">
+                <p>Blood Relation</p>
+                <a href="brother.html"><button>Brother</button></a>
+                <a href="sister.html"><button>Sister</button></a>
+            </div>
+
+            <div class="c">
+                <p>Parents</p>
+                <a href="husband_gift_e.html"><button>Father</button></a>
+                <a href="wife_gift_e.html"><button>Mother</button></a>
+            </div>
+            <div class="d">
+                <p>Friends</p>
+                <a href="friend_male.html"><button>Male</button></a>
+                <a href="girlffriend_gift_e.html"><button>Female</button></a>
+            </div>
+            <div class="m">
+                <p>Students</p>
+                <a href="stu_boy.html"><button>Boy</button></a>
+                <a href="stu_girl.html"><button>Girl</button></a>
+            </div>
+            <div class="e">
+                <p>Neighbour's</p>
+                <a href="uncle.html"><button>Uncle</button></a>
+                <a href="aunty.html"><button>Aunty</button></a>
+            </div>
+            <div class="f">
+                <p>Family</p>
+                <a href="family_gift_e.html"><button>Click Here</button></a>
+            </div>
+            <div class="g">
+                <p>For Husband</p>
+                <a href="husband_gift_e.html"><button>Click Here</button></a>
+            </div>
+            <div class="h">
+                <p>For Wife</p>
+                <a href="wife_gift_e.html"><button>Click Here</button></a>
+            </div>
+            <div class="j">
+                <p>Girlfriends</p>
+                <a href="girlffriend_gift_e.html"><button>Click Here</button></a>
+            </div>
+            <div class="k">
+                <p>Boyfriends</p>
+                <a href="boyfriend_gift_e.html"><button>Click Here</button></a>
+            </div>
+            <div class="l">
+                <p>Couples </p>
+                <a href="couple_gift.html"><button>Click Here</button></a>
+            </div>
+        </section>
+
+
+        <h2>Most Trending Gifts</h2>
+        <section class="sec2">
+            <div class="kc">
+                <p>Key Chain</p>
+                <a href="key_chain.html"><button>Click Here</button></a>
+            </div>
+            <div class="toy">
+                <p>Toys</p>
+                <a href="toys.html"><button>Click Here</button></a>
+            </div>
+            <div class="bd">
+                <p>Boys_Dress</p>
+                <a href="boy_age.html"><button>Click Here</button></a>
+            </div>
+            <div class="gd">
+                <p>Girls_Dress</p>
+                <a href="girl_dress_age.html"><button>Click Here</button></a>
+            </div>
+            <div class="shoe">
+                <p>Shoes</p>
+                <a href="shoes.html"><button>Click Here</button></a>
+            </div>
+            <div class="jwel">
+                <p>Jwelleries</p>
+                <a href="jwelleries.html"><button>Click Here</button></a>
+            </div>
+            <div class="fram">
+                <p>Frames</p>
+                <a href="photo_frame.html"><button>Click Here</button></a>
+            </div>
+            <div class="ele">
+                <p>Electronics</p>
+                <a href="electronics.html"><button>Click Here</button></a>
+            </div>
+            <div class="wall">
+                <p>Wallet/Purse</p>
+                <a href="wallet_purse.html"><button>Click Here</button></a>
+            </div>
+            <div class="pen">
+                <p>Pens</p>
+                <a href="pen.html"><button>Click Here</button></a>
+            </div>
+            <div class="clock">
+                <p>Clock/Wrist-Watch</p>
+                <a href="clock.html"><button>Click Here</button></a>
+            </div>
+            <div class="teady">
+                <p>Teady Bear</p>
+                <a href="teady.html"><button>Click Here</button></a>
+            </div>
+            <div class="sport">
+                <p>Sports</p>
+                <a href="sport.html"><button>Click Here</button></a>
+            </div>
+        </section>
+
+
+        <h2>Occational Gifts</h2>
+        <section class="sec2">
+            <div class="birt">
+                <p>Birthday</p>
+                <a href="birthday.html"><button>Click Here</button></a>
+            </div>
+            <div class="wed">
+                <p>Weddings</p>
+                <a href="wedding.html"><button>Click Here</button></a>
+            </div>
+            <div class="ani">
+                <p>Aniversery</p>
+                <a href="wedding.html"><button>Click Here</button></a>
+            </div>
+            <div class="ani">
+                <p>Promotion</p>
+                <a href="male.html"><button>Click Here</button></a>
+            </div>
+            <div class="year">
+                <p>New Year</p>
+                <a href="male.html"><button>Click Here</button></a>
+            </div>
+            <div class="gra">
+                <p>Graduation</p>
+                <a href="stu_girl.html"><button>Click Here</button></a>
+            </div>
+            <div class="ch">
+                <p>Children's Day</p>
+                <a href="stu_boy.html"><button>Click Here</button></a>
+            </div>
+            <div class="th">
+                <p>Teacher's Day</p>
+                <a href="father_gift.html"><button>Click Here</button></a>
+            </div>
+            <div class="fpd">
+                <p>Friendship Day</p>
+                <a href="friend_male.html"><button>Click Here</button></a>
+            </div>
+            <div class="vtd">
+                <p>Valentine's Day</p>
+                <a href="wedding.html"><button>Click Here</button></a>
+            </div>
+            <div class="diwali">
+                <p>Diwali</p>
+                <a href="diwali.html"><button>Click Here</button></a>
+            </div>
+        </section>
+
+        <hr>
+
+        <main>
+            <div class="containerz">
+                <h2 style="margin-top: -30px;">Frequently Asked Questions?</h2>
+                <div class="tab">
+                    <input type="radio" name="acc" id="acc1">
+                    <label for="acc1">
+                        <h2>01</h2>
+                        <h3>What is the best personalised gift idea?</h3>
+                    </label>
+                    <div class="content">
+                        <p>Personalized gifts are always great keepsakes because they have a special touch to them. You
+                            want to find the most unique personalized gift for your loved one so it is always
+                            recommended to look for something that matches with their personality. A personalized coffee
+                            mug for the dedicated coffee lover is just perfect or a personalized photo frame for the one
+                            who loves curating memories works really well. IGP has a wide range of products from which
+                            one can choose an apt gifting option for a loved one. Now that you have an idea, go ahead
+                            and explore.</p>
+                    </div>
+
+                </div>
+                <div class="tab">
+                    <input type="radio" name="acc" id="acc2">
+                    <label for="acc2">
+                        <h2>02</h2>
+                        <h3>Why Should You Buy Personalised Gifts From EUG?</h3>
+                    </label>
+                    <div class="content">
+                        <p>A wide range of products, hassle-free delivery in India and internationally, express and
+                            Midnight delivery on a range of products  IGP is the one stop destination for gifting that
+                            specializes in personalized gifts, hence, we are definitely the choicest website to place
+                            your order for a personalized keepsake.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" name="acc" id="acc3">
+                    <label for="acc3">
+                        <h2>03</h2>
+                        <h3>What are some good personalised gifts ideas for best friend?</h3>
+                    </label>
+                    <div class="content">
+                        <p>BFFs are the ones who are always there for you; they're your partner in crime, your companion
+                            in need and you want to spoil them with all your love. Personalized photo keepsakes are
+                            always a great choice or give them a personalized photo lamp that will light up their heart
+                            with bliss. There are many more options to choose from.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" name="acc" id="acc4">
+                    <label for="acc4">
+                        <h2>04</h2>
+                        <h3>Does EUG provide International delivery of personalised gifts?</h3>
+                    </label>
+                    <div class="content">
+                        <p>Yes, EUG delivers in more than 100 countries worldwide. Your token of love will reach their
+                            doorstep without any hassle</p>
+                    </div>
+                </div>
+                <a href="faq.html">More....</a>
+            </div>
+        </main>
+        <hr style="margin-top: -34px;">
+
+        <h2 style="margin-top: -10px;" ->Reviews</h2>
+        <section>
+            <div class="macho">
+                <main class="container_1">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <span class="heading">User Rating</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>4.1 average based on 254 reviews.</p>
+                    <hr style="border:3px solid #f1f1f1">
+
+                    <div class="row">
+                        <div class="side">
+                            <div>5 star</div>
+                        </div>
+                        <div class="middle">
+                            <div class="bar-container">
+                                <div class="bar-5"></div>
+                            </div>
+                        </div>
+                        <div class="side right">
+                            <div>150</div>
+                        </div>
+                        <div class="side">
+                            <div>4 star</div>
+                        </div>
+                        <div class="middle">
+                            <div class="bar-container">
+                                <div class="bar-4"></div>
+                            </div>
+                        </div>
+                        <div class="side right">
+                            <div>63</div>
+                        </div>
+                        <div class="side">
+                            <div>3 star</div>
+                        </div>
+                        <div class="middle">
+                            <div class="bar-container">
+                                <div class="bar-3"></div>
+                            </div>
+                        </div>
+                        <div class="side right">
+                            <div>15</div>
+                        </div>
+                        <div class="side">
+                            <div>2 star</div>
+                        </div>
+                        <div class="middle">
+                            <div class="bar-container">
+                                <div class="bar-2"></div>
+                            </div>
+                        </div>
+                        <div class="side right">
+                            <div>6</div>
+                        </div>
+                        <div class="side">
+                            <div>1 star</div>
+                        </div>
+                        <div class="middle">
+                            <div class="bar-container">
+                                <div class="bar-1"></div>
+                            </div>
+                        </div>
+                        <div class="side right">
+                            <div>20</div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="pot">
+                <div id="reviews-container">
+                    <h5>Customer Comments</h5>
+                    <div id="reviews-list"></div>
+
+                    <h3>Add a Review</h3>
+                    <form id="review-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+
+                        <label for="rating">Rating:</label>
+                        <select id="rating" required>
+                            <option value="5">5 stars</option>
+                            <option value="4">4 stars</option>
+                            <option value="3">3 stars</option>
+                            <option value="2">2 stars</option>
+                            <option value="1">1 star</option>
+                        </select>
+
+                        <label for="comment">Review:</label>
+                        <textarea id="comment" rows="4" required></textarea>
+
+                        <button type="button" onclick="submitReview()">Submit Review</button>
+                    </form>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <p>Thanks, Your Comment Is Saved Successfully</p>
+                    </div>
+                </div>
+
+                <script>
+                    function submitReview() {
+                        // Get values from the form
+                        var name = document.getElementById('name').value;
+                        var rating = document.getElementById('rating').value;
+                        var comment = document.getElementById('comment').value;
+
+                        // Create a new review element
+                        var reviewElement = document.createElement('div');
+                        reviewElement.className = 'review';
+                        reviewElement.innerHTML = '<strong>' + name + '</strong><br>Rating: ' + rating + ' stars<br>' + comment;
+
+                        // Append the review to the reviews list
+                        var reviewsList = document.getElementById('reviews-list');
+                        reviewsList.appendChild(reviewElement);
+
+                        // Clear the form fields
+                        document.getElementById('name').value = '';
+                        document.getElementById('rating').value = '5';
+                        document.getElementById('comment').value = '';
+                        document.getElementById("myModal").style.display = "block";
+                    }
+                    function closeModal() {
+                        // Close the modal
+                        document.getElementById("myModal").style.display = "none";
+                    }
+
+                    // Close the modal if the user clicks outside of it
+                    window.onclick = function (event) {
+                        var modal = document.getElementById("myModal");
+                        if (event.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    };
+                </script>
+            </div>
+            
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="terms_comdition.html">Terms And Conditions</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Discount Codes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>HELPFUL LINKS</h4>
+                    <ul>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Suggest a Gift</a></li>
+                        <li><a href="#">Become Our Vendor</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Dedicated Help Center</a></li>
+                        <li><a href="#">Call Us: +91 6207851006</a></li>
+                        <li><a href="#">Time: 9:00AM-6:30PM</a></li>
+                        <li><a href="#">Email Id: kumarsushant200641@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/onetap/?next=%2F"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

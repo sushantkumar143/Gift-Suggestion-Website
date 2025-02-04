@@ -1,0 +1,95 @@
+.jkl .rub{
+  background-color: antiquewhite;
+  width: 60%;
+  margin: 12% 0% 16% 25%;
+  border: solid black;
+  padding: 15px 0px 60px 27px;
+  box-shadow: 0px 0px 10px #ff00d4,0px 0px 20px #ff00d4, 0px 0px 40px #ff00d4, 0px 0px 100px #ff00d4;
+}
+
+.jkl .rub #to{
+  margin: auto;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.jkl .rub a{
+  margin-right: 20px;
+  margin-bottom: 22px;
+  width: 230px;
+  height: 52px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  color: rgba(255, 255, 255, 0.968);
+  background: #111;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.jkl .rub a:hover{
+  color: #00eeff;
+  text-shadow: 0 0 5px #00eeff;
+  box-shadow: 
+  0 0 10px #00eeff,
+  0 0 20px #00eeff,
+  0 0 40px #00eeff,
+  0 0 80px #00eeff,
+  0 0 160px #00eeff;
+  letter-spacing: 4px;
+}
+
+@media(max-width:1000px){
+  .jkl .rub{
+    margin-top: 20%;
+  }
+}
+@media(max-width:800px){
+  .jkl .rub{
+    margin-top: 30%;
+  }
+}
+@media(max-width:500px){
+  .jkl .rub{
+    margin-top: 40%;
+  }
+}
+@media(max-width:420px){
+  .jkl .rub{
+    margin-top: 50%;
+  }
+
+  .jkl .rub a{
+    width: 180px;
+    /* height: 80px; */
+    font-size: 14px;
+  }
+
+  header .kk .logo{
+    display: none;
+  }
+}
+@media(max-width:355px){
+  .jkl .rub a{
+    width: 100px;
+    height: 80px;
+    font-size: 14px;
+  }
+  .jkl .rub #to{
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width:1700px){
+  .jkl .rub a{
+    width: 330px;
+    height: 80px;
+    font-size: 35px;
+    margin-left: 150px;
+  }
+}

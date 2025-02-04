@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide{
+            display: grid;
+            place-items: center;
+            background-color: black;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .imageslider{
+            width: 60%;
+            height: 500px;
+            background-image: url("aniv1.jpeg");
+            background-size: 100% 100%;
+            animation: imgslide 15s infinite linear;
+        }
+        @keyframes imgslide {
+            0%{
+                background-image: url("aniv1.jpeg");
+            }
+            25%{
+                background-image: url("abc.jpeg");
+            }
+            50%{
+                background-image: url("birthday1.jpeg");
+            }
+            75%{
+                background-image: url("book1.jpeg");
+            }
+            100%{
+                background-image: url("diary1.jpeg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="imageslider"></div>
+    </div>
+</body>
+</html>

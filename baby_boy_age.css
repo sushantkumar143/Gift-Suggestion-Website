@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  background-color: rgb(4, 16, 71);
+  margin: 0%;
+  display: flex;
+}
+
+.navigation ul {
+  margin: 0%;
+  overflow: auto;
+}
+
+.navigation li {
+  float: right;
+  padding: 22px;
+  color: rgb(207, 221, 81);
+  font-size: 1.28rem;
+}
+
+/* .navigation li:hover {
+  font-size: 1.38rem;
+  text-decoration: underline solid wheat;
+} */
+
+.navigation li a {
+  color: rgb(207, 221, 81);
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  font-size: 1.38rem;
+  color: rgb(15, 234, 23);
+  text-decoration: underline solid wheat;
+  text-shadow: 0px 0px 20px rgb(183, 247, 8);
+}
+
+.navigation li a:active {
+  color: rgb(181, 232, 238);
+  text-decoration: underline solid wheat;
+}
+
+.navigation .icon {
+  float: left;
+  height: 3.6rem;
+  padding-left: 18px;
+}
+
+.navigation #search {
+  float: left;
+  margin-right: 0px;
+  margin-left: 10%;
+  margin-top: 18px;
+  font-size: 1.28rem;
+  border-radius: 18px;
+  padding-left: 15px;
+  height: 25px;
+  width: 20%;
+}
+
+#ic {
+  margin-top: 0%;
+  padding-left: 7px;
+  font-size: 1.95rem;
+  line-height: 30px;
+  display: flexbox;
+  float: left;
+  text-overflow: clip;
+  border: solid rgba(red, green, blue, 0);
+  width: 150px;
+  text-align: center;
+}
+
+.head {
+  background-color: rgb(44, 5, 11);
+  text-shadow: 1px 1px 0px white;
+}
+
+
+div{
+  background-color: antiquewhite;
+  width: 55%;
+  margin: 6% 8% 5px 15%;
+  border: solid black;
+  padding: 150px 60px 80px 150px;
+  box-shadow: 0px 0px 10px #ff00d4,0px 0px 20px #ff00d4, 0px 0px 40px #ff00d4, 0px 0px 100px #ff00d4;
+}
+
+div h1{
+  margin-left: 80px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+div a{
+  margin-right: 20px;
+  margin-bottom: 22px;
+  width: 180px;
+  height: 42px;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  color: rgba(255, 255, 255, 0.968);
+  background: #111;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+div a:hover{
+  color: #00eeff;
+  text-shadow: 0 0 5px #00eeff;
+  box-shadow: 
+  0 0 10px #00eeff,
+  0 0 20px #00eeff,
+  0 0 40px #00eeff,
+  0 0 80px #00eeff,
+  0 0 160px #00eeff;
+  letter-spacing: 4px;
+}

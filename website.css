@@ -1,0 +1,654 @@
+main{
+    background-color: #e8f2f7;
+}
+
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(248, 248, 4);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.sectionx{
+    margin-top: 60px;
+    display: block;
+    background-color: #1a0505;
+}
+#hiih{
+    margin-top: 35px;
+    animation: fadeInUp 1s ease-in-out;
+}
+#slide-1:target~.image-container {
+    left: 0px;
+}
+
+#slide-2:target~.image-container {
+    left: -500px;
+}
+
+#slide-3:target~.image-container {
+    left: -1000px;
+}
+
+.buttons {
+    position: relative;
+    top: -20px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+}
+
+.kk .icon{
+    animation: scaleAndRotate 4s infinite alternate;
+}
+
+.img1 {
+    width: 70%;
+    padding-top: 100px;
+}
+
+#line {
+    margin: -1%;
+    height: 100px;
+    background-image: url("d.jpeg");
+}
+
+#ex {
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(183, 247, 8);
+    background-image: url("t.jpeg");
+    color: rgb(0, 0, 0);
+    margin-top: -5%;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    animation: animatebg 5s linear infinite;
+}
+
+.sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(94, 89, 89,0.2);
+    border-radius: 30px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    border-bottom: solid #000000;
+    box-shadow: inset 5px 5px 50px black;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes animatebg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sec2 div {
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px;
+    width: 220px;
+    height: 160px;
+    margin: 20px 50px 50px 30px;
+    border-radius: 20px;
+    border-color: #00d7c3;
+    box-shadow: 6px 6px 16px rgb(145, 232, 250);
+}
+
+.sec2 div p {
+    color: aliceblue;
+    text-align: center;
+    /* padding-left: 110px; */
+    font-size: 1.18rem;
+    font-weight: 800;
+    padding-top: 2px;
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8) inset;
+    overflow: hidden;
+    z-index: 900;
+    /* filter: blur(0.1px); */
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    background-color: rgba(35, 36, 36, 0.6);
+}
+.sec2 div a button:active{
+    color: rgb(248, 78, 59);
+}
+
+.a button, .b button, .c button, .d button, .m button, .e button{
+    width: 80px;
+    height: 30px;
+    color: #3e1245;
+    margin-left: 17px;
+    margin-top: 90px;
+    font-weight: 1000;
+    border-radius: 50px;
+    border: 3px groove #3e1245;
+    background-image: -webkit-linear-gradient(30deg, linear-gradient(red,violet), transparent 50%);
+    background-image: linear-gradient(30deg, #e9a8f4 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 0.8s ease-in-out;
+    transition: background 0.8s ease-in-out;
+}
+  
+.a button:hover, .b button:hover, .c button:hover, .d button:hover, .m button:hover, .e button:hover{
+    background-position: 100%;
+    color: #3e1245;
+    box-shadow: 0 3px 10px 0 #f25fe6, 0 0 20px #f25fe6, 0 0 40px #f25fe6;
+    border: 3px solid #00d7c3;
+    cursor: pointer;
+}
+
+.f button, .g button, .h button, .i button, .j button, .k button, .l button, .sp button, .kc button, .toy button, .bd button, .gd button, .shoe button, .jwel button, .card button, .led button, .fram button, .ele button, .canavas button, .diary button, .wall button, .pen button, .np button, .we button, .lamp button, .clock button, .teady button, .diwali button, .book button, .sport button, .birt button, .wed button, .ani button, .year button, .nb button, .con button, .gra button, .fd button, .md button, .ch button, .th button, .fpd button, .vtd button, .chd button, .hw button{
+        /* background-color: transparent; */
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 3px solid #00d7c3;
+        border-radius: 50px;
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        color: #00d7c3;
+        margin-top: 90px;
+        margin-left: 30%;
+        font-weight: 1000;
+        opacity: 0.76;
+}
+
+.f button:hover, .g button:hover, .h button:hover, .i button:hover, .j button:hover, .k button:hover, .l button:hover, .sp button:hover, .kc button:hover, .toy button:hover, .bd button:hover, .gd button:hover, .shoe button:hover, .jwel button:hover, .card button:hover, .led button:hover, .fram button:hover, .ele button:hover, .canavas button:hover, .diary button:hover, .wall button:hover, .pen button:hover, .np button:hover, .we button:hover, .lamp button:hover, .clock button:hover, .teady button:hover, .diwali button:hover, .book button:hover, .sport button:hover, .birt button:hover, .wed button:hover, .ani button:hover, .year button:hover, .nb button:hover, .con button:hover, .gra button:hover, .fd button:hover, .md button:hover, .ch button:hover, .th button:hover, .fpd button:hover, .vtd button:hover, .chd button:hover, .hw button:hover{
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .m:hover, .f:hover, .g:hover, .h:hover, .i:hover, .j:hover, .k:hover, .l:hover, .sp:hover, .kc:hover, .toy:hover, .bd:hover, .gd:hover, .shoe:hover, .jwel:hover, .card:hover, .led:hover, .fram:hover, .ele:hover, .canavas:hover, .diary:hover, .wall:hover, .pen:hover, .np:hover, .we:hover, .lamp:hover, .clock:hover, .teady:hover, .diwali:hover, .book:hover, .sport:hover, .birt:hover, .wed:hover, .ani:hover, .year:hover, .nb:hover, .con:hover, .gra:hover, .fd:hover, .md:hover, .ch:hover, .th:hover, .fpd:hover, .vtd:hover, .chd:hover, .hw:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 6px 6px 140px 10px rgba(27, 27, 8, 1) inset;
+}
+
+.a {
+    background-image: url("babyg.jpeg");
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.b {
+    background-image: url("download\ \(3\).jpeg");
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.c {
+    background-image: url("download\ \(2\).jpeg");
+    transition: 0.5s;
+}
+
+.d {
+    background-image: url("friend.jpeg");
+    transition: 0.5s;
+}
+
+.e {
+    background-image: url("neigh.jpeg");
+    transition: 0.5s;
+}
+
+.f {
+    background-image: url("family.jpeg");
+    transition: 0.5s;
+}
+
+.g {
+    background-image: url("par.jpeg");
+    transition: 0.5s;
+}
+
+.h {
+    background-image: url("img4.jpeg");
+    transition: 0.5s;
+}
+
+.i {
+    background-image: url("aniver.jpeg");
+    transition: 0.5s;
+}
+
+.j {
+    background-image: url("girl.jpeg");
+    transition: 0.5s;
+}
+
+.k {
+    background-image: url("images\ \(5\).jpeg");
+    transition: 0.5s;
+}
+
+.l {
+    background-image: url("couple.jpeg");
+    transition: 0.5s;
+}
+
+.m {
+    background-image: url("stu.jpeg");
+    transition: 0.5s;
+}
+
+.sp {
+    background-image: url("sp1.jpeg");
+    transition: 0.5s;
+}
+
+.kc {
+    background-image: url("kc2.jpeg");
+    transition: 0.5s;
+}
+
+.toy {
+    background-image: url("toy.jpeg");
+    transition: 0.5s;
+}
+
+.bd {
+    background-image: url("bd2.jpeg");
+    transition: 0.5s;
+}
+
+.gd {
+    background-image: url("gd4.jpeg");
+    transition: 0.5s;
+}
+
+.shoe {
+    background-image: url("shoe3.jpeg");
+    transition: 0.5s;
+}
+
+.jwel {
+    background-image: url("jwell1.jpeg");
+    transition: 0.5s;
+}
+
+.card {
+    background-image: url("gc1.jpeg");
+    transition: 0.5s;
+}
+
+.led {
+    background-image: url("ledb2.jpeg");
+    transition: 0.5s;
+}
+
+.fram {
+    background-image: url("stu.jpeg");
+    transition: 0.5s;
+}
+
+.ele {
+    background-image: url("elect3.jpeg");
+    transition: 0.5s;
+}
+
+.canavas {
+    background-image: url("canavas.jpeg");
+    transition: 0.5s;
+}
+
+.diary {
+    background-image: url("diary1.jpeg");
+    transition: 0.5s;
+}
+
+.wall {
+    background-image: url("purse1.jpeg");
+    transition: 0.5s;
+}
+
+.pen {
+    background-image: url("pen.jpeg");
+    transition: 0.5s;
+}
+
+.np {
+    background-image: url("nmplat.jpeg");
+    transition: 0.5s;
+}
+
+.we {
+    background-image: url("wdeng.jpeg");
+    transition: 0.5s;
+}
+
+.clock {
+    background-image: url("cf1.jpeg");
+    transition: 0.5s;
+}
+
+.lamp {
+    background-image: url("dl2.jpeg");
+    transition: 0.5s;
+}
+
+.teady {
+    background-image: url("tb.jpeg");
+    transition: 0.5s;
+}
+
+.book {
+    background-image: url("book.jpeg");
+    transition: 0.5s;
+}
+
+.sport {
+    background-image: url("stu.jpeg");
+    transition: 0.5s;
+}
+
+.birt {
+    background-image: url("birthday1.jpeg");
+    transition: 0.5s;
+}
+
+.wed {
+    background-image: url("wed.jpeg");
+    transition: 0.5s;
+}
+
+.ani {
+    background-image: url("aniv1.jpeg");
+    transition: 0.5s;
+}
+
+.year {
+    background-image: url("newy.jpeg");
+    transition: 0.5s;
+}
+
+.nb {
+    background-image: url("babyg.jpeg");
+    transition: 0.5s;
+}
+
+.con {
+    background-image: url("cong.jpeg");
+    transition: 0.5s;
+}
+
+.gra {
+    background-image: url("gra.jpeg");
+    transition: 0.5s;
+}
+
+.fd {
+    background-image: url("fatd.jpeg");
+    transition: 0.5s;
+}
+
+.md {
+    background-image: url("mothd.jpeg");
+    transition: 0.5s;
+}
+
+.ch {
+    background-image: url("child.jpeg");
+    transition: 0.5s;
+}
+
+.th {
+    background-image: url("tech.jpeg");
+    transition: 0.5s;
+}
+
+.fpd {
+    background-image: url("friendd1.jpeg");
+    transition: 0.5s;
+}
+
+.vtd {
+    background-image: url("val1.jpeg");
+    transition: 0.5s;
+}
+
+.chd {
+    background-image: url("chris.jpeg");
+    transition: 0.5s;
+}
+
+.hw {
+    background-image: url("stu.jpeg");
+    transition: 0.5s;
+}
+
+.diwali {
+    background-image: url("diwali.jpeg");
+    transition: 0.5s;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #1c1d21;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #fb0606;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+    #ex{
+        font-size: 45px;
+    }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+h4{
+    content: "";
+    transition: transformX(scale(1));
+}
+
+h1{
+    padding-top: 20px;
+    text-align: center;
+    color: #000000;
+    width: 1000;
+    font-size: 40px;
+}
+h2{
+    /* text-align: center; */
+    color: #000000;
+    width: 1000;
+    font-size: 28.5px;
+    margin-left: 34px;
+    padding: 15px;
+}
+
+@media(max-width: 900px){
+    #ex{
+        font-size: 30px;
+    }
+}
+@media(max-width: 1300px){
+    #ex{
+        font-size: 40px;
+    }
+}
+
+hr{
+    height: 2px;
+    background-color: #000000;
+    margin-top: 7px;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    display: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.kc,.toy,.bd,.gd,.shoe,.jwel,.fram,.ele,.wall,.pen{
+    animation: fadeInUpx 1s ease-in-out;
+}
+
+@keyframes fadeInUpx {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 110, 35);
+    color: beige;
+    font-weight: 800;
+    padding: 20px;
+    text-align: center;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+

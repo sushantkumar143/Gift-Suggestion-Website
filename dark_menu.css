@@ -1,0 +1,51 @@
+#darkmode{
+    float: right;
+    font-size: 1rem;
+    margin: 22px 34px 0px 10px;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    box-shadow: 1px 1px 3px yellowgreen inset,
+    0px 0px 8px yellowgreen inset,
+    0px 0px 10px yellowgreen inset;
+}
+#darkmode:hover{
+    background: rgb(226, 241, 105);
+    box-shadow: 2px 2px 20px rgb(10, 10, 10);
+}
+#darkmode:active{
+    background-color: rgb(255, 87, 87);
+}
+.light-mode main, .light-mode body{
+    background: linear-gradient(to right, #041388, #0b3317);
+    color: rgb(255, 253, 253);
+    transition: all 5s ease-out;
+}
+.light-mode h2{
+    color: rgb(255, 253, 253);
+    transition: 1s ease;
+}
+.light-mode #darkmode:hover{
+    box-shadow: 2px 2px 5px rgb(255, 238, 46),
+    2px 2px 10px rgb(255, 238, 46),
+    2px 2px 25px rgb(255, 238, 46),
+    2px 2px 40px rgb(255, 238, 46);
+}
+.light-mode hr{
+    display: block;
+    transition: 1s linear ease-in-out;
+}
+.light-mode .containerx{
+    background-color: rgb(89, 89, 89);
+}
+.light-mode .sec2{
+    box-shadow: none;
+    transition: 1s linear;
+    border: none;
+}
+.light-mode #reviews-container{
+    color: black;
+    background-color: rgb(158, 188, 188);
+    transition: 7s;
+}
